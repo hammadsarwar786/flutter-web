@@ -28,13 +28,10 @@ class TitleText extends StatelessWidget {
         kIsWeb && Responsive.isDesktop(context)
             ? ShaderMask(
                 shaderCallback: (bounds) {
-                  return const LinearGradient(
-                      end: Alignment.centerRight,
-                      begin: Alignment.centerLeft,
-                      colors: [
-                        Colors.pink,
-                        Colors.cyanAccent,
-                      ]).createShader(bounds);
+                  return const LinearGradient(end: Alignment.centerRight, begin: Alignment.centerLeft, colors: [
+                    Color.fromARGB(255, 255, 0, 0),
+                    Colors.pink,
+                  ]).createShader(bounds);
                 },
                 child: Text(
                   title,
